@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,12 +75,15 @@
                 transform: translateY(100vh) rotate(0deg);
                 opacity: 0;
             }
+
             10% {
                 opacity: 1;
             }
+
             90% {
                 opacity: 1;
             }
+
             100% {
                 transform: translateY(-100px) rotate(360deg);
                 opacity: 0;
@@ -97,22 +101,30 @@
         }
 
         @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .welcome-section h1 {
             font-size: 4rem;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
             animation: pulse 2s ease-in-out infinite;
         }
 
         .welcome-section p {
             font-size: 1.8rem;
             margin-bottom: 2rem;
-            text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
             animation: fadeInUp 2s ease-out;
         }
 
@@ -127,9 +139,17 @@
         }
 
         @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
         @keyframes fadeInUp {
@@ -137,6 +157,7 @@
                 opacity: 0;
                 transform: translateY(50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -148,13 +169,16 @@
                 opacity: 0;
                 transform: scale(0.3);
             }
+
             50% {
                 opacity: 1;
                 transform: scale(1.05);
             }
+
             70% {
                 transform: scale(0.9);
             }
+
             100% {
                 transform: scale(1);
             }
@@ -193,13 +217,18 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             animation: shimmer 2s ease-in-out infinite;
         }
 
         @keyframes shimmer {
-            0% { left: -100%; }
-            100% { left: 100%; }
+            0% {
+                left: -100%;
+            }
+
+            100% {
+                left: 100%;
+            }
         }
 
         @keyframes slideInUp {
@@ -207,6 +236,7 @@
                 opacity: 0;
                 transform: translateY(50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -221,17 +251,31 @@
         }
 
         @keyframes heartbeat {
-            0% { transform: scale(1); }
-            14% { transform: scale(1.1); }
-            28% { transform: scale(1); }
-            42% { transform: scale(1.1); }
-            70% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            14% {
+                transform: scale(1.1);
+            }
+
+            28% {
+                transform: scale(1);
+            }
+
+            42% {
+                transform: scale(1.1);
+            }
+
+            70% {
+                transform: scale(1);
+            }
         }
 
         .memory-card h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
         }
 
         .memory-card p {
@@ -259,7 +303,7 @@
             margin: 2rem 0;
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
 
         .video-placeholder {
@@ -287,13 +331,18 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             animation: videoShimmer 3s ease-in-out infinite;
         }
 
         @keyframes videoShimmer {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
         }
 
         .play-icon {
@@ -303,9 +352,17 @@
         }
 
         @keyframes playPulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
         /* Photo Gallery Section */
@@ -344,18 +401,36 @@
             animation: photoFadeIn 0.5s ease-out;
         }
 
-        .photo-placeholder:nth-child(1) { animation-delay: 0.1s; }
-        .photo-placeholder:nth-child(2) { animation-delay: 0.2s; }
-        .photo-placeholder:nth-child(3) { animation-delay: 0.3s; }
-        .photo-placeholder:nth-child(4) { animation-delay: 0.4s; }
-        .photo-placeholder:nth-child(5) { animation-delay: 0.5s; }
-        .photo-placeholder:nth-child(6) { animation-delay: 0.6s; }
+        .photo-placeholder:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .photo-placeholder:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .photo-placeholder:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .photo-placeholder:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .photo-placeholder:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        .photo-placeholder:nth-child(6) {
+            animation-delay: 0.6s;
+        }
 
         @keyframes photoFadeIn {
             from {
                 opacity: 0;
                 transform: scale(0.8);
             }
+
             to {
                 opacity: 1;
                 transform: scale(1);
@@ -364,7 +439,7 @@
 
         .photo-placeholder:hover {
             transform: scale(1.1);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
         /* Love Letter Section */
@@ -393,10 +468,12 @@
                 opacity: 0;
                 transform: rotateX(-90deg);
             }
+
             50% {
                 opacity: 0.5;
                 transform: rotateX(-45deg);
             }
+
             100% {
                 opacity: 1;
                 transform: rotateX(0deg);
@@ -406,7 +483,7 @@
         .love-letter h2 {
             font-size: 2.5rem;
             margin-bottom: 2rem;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
         }
 
         .love-letter p {
@@ -417,16 +494,28 @@
             animation: textReveal 1s ease-out forwards;
         }
 
-        .love-letter p:nth-child(2) { animation-delay: 0.5s; }
-        .love-letter p:nth-child(3) { animation-delay: 1s; }
-        .love-letter p:nth-child(4) { animation-delay: 1.5s; }
-        .love-letter p:nth-child(5) { animation-delay: 2s; }
+        .love-letter p:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .love-letter p:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        .love-letter p:nth-child(4) {
+            animation-delay: 1.5s;
+        }
+
+        .love-letter p:nth-child(5) {
+            animation-delay: 2s;
+        }
 
         @keyframes textReveal {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -447,6 +536,7 @@
                 opacity: 0;
                 transform: translateX(-50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -507,9 +597,17 @@
         }
 
         @keyframes autoTourPulse {
-            0% { box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(255, 107, 107, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(255, 107, 107, 0); }
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(255, 107, 107, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 107, 107, 0);
+            }
         }
 
         /* Section Indicators */
@@ -543,33 +641,33 @@
             .welcome-section h1 {
                 font-size: 2.5rem;
             }
-            
+
             .welcome-section p {
                 font-size: 1.2rem;
             }
-            
+
             .memory-card {
                 padding: 2rem;
             }
-            
+
             .memory-card h2 {
                 font-size: 2rem;
             }
-            
+
             .memory-card p {
                 font-size: 1.1rem;
             }
-            
+
             .gallery-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
+
             .tour-controls {
                 bottom: 20px;
                 flex-direction: column;
                 gap: 0.5rem;
             }
-            
+
             .tour-btn {
                 padding: 0.8rem 1.5rem;
                 font-size: 0.9rem;
@@ -587,331 +685,344 @@
         }
 
         @keyframes sparkle {
-            0%, 100% { opacity: 0; transform: scale(0); }
-            50% { opacity: 1; transform: scale(1); }
+
+            0%,
+            100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
+
         /* Enhanced Mobile Responsive Design */
-@media (max-width: 480px) {
-    /* Welcome Section Mobile */
-    .welcome-section h1 {
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    .welcome-section p {
-        font-size: 1rem;
-        margin-bottom: 1rem;
-        padding: 0 1rem;
-    }
-    
-    .tour-message {
-        font-size: 1rem;
-        margin-top: 1rem;
-        padding: 0.8rem 1.5rem;
-    }
-    
-    .welcome-section {
-        padding: 1rem;
-    }
-    
-    /* Memory Sections Mobile */
-    .memory-section {
-        padding: 1rem;
-    }
-    
-    .memory-card {
-        padding: 1.5rem;
-        margin: 0 0.5rem;
-    }
-    
-    .memory-card h2 {
-        font-size: 1.5rem;
-        margin-bottom: 0.8rem;
-    }
-    
-    .memory-card p {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-    
-    .memory-card .icon {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-    
-    /* Video Section Mobile */
-    .video-section {
-        padding: 1rem;
-    }
-    
-    .video-container {
-        width: 95%;
-        margin: 1rem 0;
-    }
-    
-    .video-placeholder {
-        height: 200px;
-        font-size: 1.2rem;
-    }
-    
-    .play-icon {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    /* Gallery Section Mobile */
-    .gallery-section {
-        padding: 1rem;
-    }
-    
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
-        margin-top: 1rem;
-        max-width: 100%;
-        padding: 0 1rem;
-    }
-    
-    .photo-placeholder {
-        font-size: 0.8rem;
-        border-radius: 10px;
-    }
-    
-    /* Love Letter Section Mobile */
-    .letter-section {
-        padding: 1rem;
-    }
-    
-    .love-letter {
-        padding: 1.5rem;
-        margin: 0 0.5rem;
-    }
-    
-    .love-letter h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-    }
-    
-    .love-letter p {
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 1rem;
-    }
-    
-    .signature {
-        font-size: 1.2rem;
-        margin-top: 1rem;
-    }
-    
-    /* Tour Controls Mobile */
-    .tour-controls {
-        bottom: 15px;
-        flex-direction: row;
-        gap: 0.5rem;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    
-    .tour-btn {
-        padding: 0.6rem 1rem;
-        font-size: 0.85rem;
-        border-radius: 25px;
-        min-width: 80px;
-    }
-    
-    /* Section Indicators Mobile */
-    .section-indicators {
-        right: 15px;
-        gap: 0.8rem;
-    }
-    
-    .indicator {
-        width: 10px;
-        height: 10px;
-    }
-    
-    .indicator.active {
-        transform: scale(1.3);
-    }
-    
-    /* Floating Hearts Mobile */
-    .heart {
-        font-size: 16px;
-    }
-    
-    /* Progress Bar Mobile */
-    .progress-bar {
-        height: 3px;
-    }
-}
+        @media (max-width: 480px) {
 
-/* Tablet Responsive (481px - 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
-    .welcome-section h1 {
-        font-size: 3rem;
-    }
-    
-    .welcome-section p {
-        font-size: 1.4rem;
-    }
-    
-    .memory-card {
-        padding: 2.5rem;
-    }
-    
-    .memory-card h2 {
-        font-size: 2.2rem;
-    }
-    
-    .memory-card p {
-        font-size: 1.2rem;
-    }
-    
-    .video-container {
-        width: 90%;
-    }
-    
-    .video-placeholder {
-        height: 250px;
-    }
-    
-    .gallery-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.8rem;
-    }
-    
-    .tour-controls {
-        bottom: 25px;
-        flex-direction: row;
-        gap: 0.8rem;
-    }
-    
-    .tour-btn {
-        padding: 0.9rem 1.8rem;
-        font-size: 0.95rem;
-    }
-}
+            /* Welcome Section Mobile */
+            .welcome-section h1 {
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
 
-/* Large Mobile Landscape (769px - 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .welcome-section h1 {
-        font-size: 3.5rem;
-    }
-    
-    .welcome-section p {
-        font-size: 1.6rem;
-    }
-    
-    .memory-card {
-        padding: 2.8rem;
-    }
-    
-    .video-container {
-        width: 85%;
-    }
-    
-    .gallery-grid {
-        max-width: 500px;
-    }
-}
+            .welcome-section p {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                padding: 0 1rem;
+            }
 
-/* Touch Device Optimizations */
-@media (pointer: coarse) {
-    .tour-btn {
-        min-height: 44px;
-        min-width: 44px;
-    }
-    
-    .indicator {
-        min-width: 20px;
-        min-height: 20px;
-    }
-    
-    .photo-placeholder {
-        min-height: 60px;
-    }
-}
+            .tour-message {
+                font-size: 1rem;
+                margin-top: 1rem;
+                padding: 0.8rem 1.5rem;
+            }
 
-/* Landscape Orientation Mobile */
-@media (max-width: 768px) and (orientation: landscape) {
-    .welcome-section {
-        padding: 1rem;
-    }
-    
-    .welcome-section h1 {
-        font-size: 2.2rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    .welcome-section p {
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
-    }
-    
-    .tour-message {
-        font-size: 0.9rem;
-        padding: 0.6rem 1.2rem;
-    }
-    
-    .memory-card {
-        padding: 2rem;
-    }
-    
-    .memory-card h2 {
-        font-size: 1.8rem;
-    }
-    
-    .video-placeholder {
-        height: 180px;
-    }
-    
-    .tour-controls {
-        bottom: 10px;
-    }
-    
-    .tour-btn {
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
-    }
-}
+            .welcome-section {
+                padding: 1rem;
+            }
 
-/* High DPI Display Support */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .heart {
-        font-size: 18px;
-    }
-    
-    .sparkle {
-        width: 6px;
-        height: 6px;
-    }
-}
+            /* Memory Sections Mobile */
+            .memory-section {
+                padding: 1rem;
+            }
 
-/* Accessibility Improvements */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-}
+            .memory-card {
+                padding: 1.5rem;
+                margin: 0 0.5rem;
+            }
 
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-    .tour-btn {
-        background: rgba(0, 0, 0, 0.3);
-        backdrop-filter: blur(10px);
-    }
-    
-    .indicator {
-        background: rgba(255, 255, 255, 0.5);
-    }
-}
+            .memory-card h2 {
+                font-size: 1.5rem;
+                margin-bottom: 0.8rem;
+            }
+
+            .memory-card p {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            .memory-card .icon {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            /* Video Section Mobile */
+            .video-section {
+                padding: 1rem;
+            }
+
+            .video-container {
+                width: 95%;
+                margin: 1rem 0;
+            }
+
+            .video-placeholder {
+                height: 200px;
+                font-size: 1.2rem;
+            }
+
+            .play-icon {
+                font-size: 2.5rem;
+                margin-bottom: 0.5rem;
+            }
+
+            /* Gallery Section Mobile */
+            .gallery-section {
+                padding: 1rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+                margin-top: 1rem;
+                max-width: 100%;
+                padding: 0 1rem;
+            }
+
+            .photo-placeholder {
+                font-size: 0.8rem;
+                border-radius: 10px;
+            }
+
+            /* Love Letter Section Mobile */
+            .letter-section {
+                padding: 1rem;
+            }
+
+            .love-letter {
+                padding: 1.5rem;
+                margin: 0 0.5rem;
+            }
+
+            .love-letter h2 {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+
+            .love-letter p {
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 1rem;
+            }
+
+            .signature {
+                font-size: 1.2rem;
+                margin-top: 1rem;
+            }
+
+            /* Tour Controls Mobile */
+            .tour-controls {
+                bottom: 15px;
+                flex-direction: row;
+                gap: 0.5rem;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 90%;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .tour-btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.85rem;
+                border-radius: 25px;
+                min-width: 80px;
+            }
+
+            /* Section Indicators Mobile */
+            .section-indicators {
+                right: 15px;
+                gap: 0.8rem;
+            }
+
+            .indicator {
+                width: 10px;
+                height: 10px;
+            }
+
+            .indicator.active {
+                transform: scale(1.3);
+            }
+
+            /* Floating Hearts Mobile */
+            .heart {
+                font-size: 16px;
+            }
+
+            /* Progress Bar Mobile */
+            .progress-bar {
+                height: 3px;
+            }
+        }
+
+        /* Tablet Responsive (481px - 768px) */
+        @media (min-width: 481px) and (max-width: 768px) {
+            .welcome-section h1 {
+                font-size: 3rem;
+            }
+
+            .welcome-section p {
+                font-size: 1.4rem;
+            }
+
+            .memory-card {
+                padding: 2.5rem;
+            }
+
+            .memory-card h2 {
+                font-size: 2.2rem;
+            }
+
+            .memory-card p {
+                font-size: 1.2rem;
+            }
+
+            .video-container {
+                width: 90%;
+            }
+
+            .video-placeholder {
+                height: 250px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0.8rem;
+            }
+
+            .tour-controls {
+                bottom: 25px;
+                flex-direction: row;
+                gap: 0.8rem;
+            }
+
+            .tour-btn {
+                padding: 0.9rem 1.8rem;
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Large Mobile Landscape (769px - 1024px) */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .welcome-section h1 {
+                font-size: 3.5rem;
+            }
+
+            .welcome-section p {
+                font-size: 1.6rem;
+            }
+
+            .memory-card {
+                padding: 2.8rem;
+            }
+
+            .video-container {
+                width: 85%;
+            }
+
+            .gallery-grid {
+                max-width: 500px;
+            }
+        }
+
+        /* Touch Device Optimizations */
+        @media (pointer: coarse) {
+            .tour-btn {
+                min-height: 44px;
+                min-width: 44px;
+            }
+
+            .indicator {
+                min-width: 20px;
+                min-height: 20px;
+            }
+
+            .photo-placeholder {
+                min-height: 60px;
+            }
+        }
+
+        /* Landscape Orientation Mobile */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .welcome-section {
+                padding: 1rem;
+            }
+
+            .welcome-section h1 {
+                font-size: 2.2rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .welcome-section p {
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+            }
+
+            .tour-message {
+                font-size: 0.9rem;
+                padding: 0.6rem 1.2rem;
+            }
+
+            .memory-card {
+                padding: 2rem;
+            }
+
+            .memory-card h2 {
+                font-size: 1.8rem;
+            }
+
+            .video-placeholder {
+                height: 180px;
+            }
+
+            .tour-controls {
+                bottom: 10px;
+            }
+
+            .tour-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* High DPI Display Support */
+        @media (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+            .heart {
+                font-size: 18px;
+            }
+
+            .sparkle {
+                width: 6px;
+                height: 6px;
+            }
+        }
+
+        /* Accessibility Improvements */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Dark Mode Support */
+        @media (prefers-color-scheme: dark) {
+            .tour-btn {
+                background: rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(10px);
+            }
+
+            .indicator {
+                background: rgba(255, 255, 255, 0.5);
+            }
+        }
     </style>
 </head>
+
 <body>
     <!-- Progress Bar -->
     <div class="progress-bar" id="progressBar"></div>
@@ -942,7 +1053,9 @@
                         <i class="fas fa-heart"></i>
                     </div>
                     <h2>Our First Date</h2>
-                    <p>I still remember how nervous I was, but you made everything feel so natural and perfect. That smile of yours captured my heart instantly, and I knew from that moment that you were someone truly special.</p>
+                    <p>I still remember how nervous I was, but you made everything feel so natural and perfect. That
+                        smile of yours captured my heart instantly, and I knew from that moment that you were someone
+                        truly special.</p>
                 </div>
             </div>
         </div>
@@ -955,7 +1068,8 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <h2>Our Adventures</h2>
-                    <p>Every adventure with you feels like a fairytale. Whether exploring new places or trying crazy restaurants, you bring magic to ordinary moments and make every experience unforgettable.</p>
+                    <p>Every adventure with you feels like a fairytale. Whether exploring new places or trying crazy
+                        restaurants, you bring magic to ordinary moments and make every experience unforgettable.</p>
                 </div>
             </div>
         </div>
@@ -963,21 +1077,23 @@
         <!-- Section 4: Video Memory -->
         <div class="tour-section video-section" id="section4">
             <div>
-                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.3);">Our Special Moments</h2>
-                <p style="font-size: 1.3rem; margin-bottom: 2rem;">Here are some of our beautiful memories captured on video</p>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.3);">Our
+                    Special Moments</h2>
+                <p style="font-size: 1.3rem; margin-bottom: 2rem;">Here are some of our beautiful memories captured on
+                    video</p>
                 <div class="video-container">
                     <div class="video-placeholder" onclick="playVideo(1)">
                         <div>
-                            <div class="play-icon">▶️</div>
-                            <div>Replace with your<br>favorite video together!</div>
+                            <video src="videos/video2.mp4" controls autoplay muted playsinline loop
+                                style="width: 100%; border-radius: 20px;"></video>
                         </div>
                     </div>
                 </div>
                 <div class="video-container">
                     <div class="video-placeholder" onclick="playVideo(2)">
                         <div>
-                            <div class="play-icon">▶️</div>
-                            <div>Add another special<br>video memory here!</div>
+                            <video src="videos/video2.mp4" controls autoplay muted playsinline loop
+                                style="width: 100%; border-radius: 20px;"></video>
                         </div>
                     </div>
                 </div>
@@ -992,7 +1108,9 @@
                         <i class="fas fa-music"></i>
                     </div>
                     <h2>Dancing Together</h2>
-                    <p>Those spontaneous dance sessions in the kitchen - no music needed, just us being silly and completely in love. These moments make my heart skip a beat and remind me why I fell for you.</p>
+                    <p>Those spontaneous dance sessions in the kitchen - no music needed, just us being silly and
+                        completely in love. These moments make my heart skip a beat and remind me why I fell for you.
+                    </p>
                 </div>
             </div>
         </div>
@@ -1000,26 +1118,27 @@
         <!-- Section 6: Photo Gallery -->
         <div class="tour-section gallery-section" id="section6">
             <div>
-                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.3);">Our Photo Gallery 📸</h2>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.3);">Our Photo
+                    Gallery 📸</h2>
                 <p style="font-size: 1.3rem; margin-bottom: 2rem;">Beautiful moments we've captured together</p>
                 <div class="gallery-grid">
                     <div class="photo-placeholder" onclick="showPhotoMessage(1)">
-                        <span>Photo 1<br>❤️</span>
+                        <img src="media/1.jpg" alt="Photo 1" class="photo-placeholder" />
                     </div>
                     <div class="photo-placeholder" onclick="showPhotoMessage(2)">
-                        <span>Photo 2<br>💕</span>
+                        <img src="media/1.jpg" alt="Photo 1" class="photo-placeholder" />
                     </div>
                     <div class="photo-placeholder" onclick="showPhotoMessage(3)">
-                        <span>Photo 3<br>🌟</span>
+                        <img src="media/1.jpg" alt="Photo 1" class="photo-placeholder" />
                     </div>
                     <div class="photo-placeholder" onclick="showPhotoMessage(4)">
-                        <span>Photo 4<br>🎉</span>
+                        <img src="media/1.jpg" alt="Photo 1" class="photo-placeholder" />
                     </div>
                     <div class="photo-placeholder" onclick="showPhotoMessage(5)">
-                        <span>Photo 5<br>💖</span>
+                        <img src="media/1.jpg" alt="Photo 1" class="photo-placeholder" />
                     </div>
                     <div class="photo-placeholder" onclick="showPhotoMessage(6)">
-                        <span>Photo 6<br>✨</span>
+                        <img src="media/1.jpg" alt="Photo 1" class="photo-placeholder" />
                     </div>
                 </div>
             </div>
@@ -1033,7 +1152,8 @@
                         <i class="fas fa-moon"></i>
                     </div>
                     <h2>Late Night Talks</h2>
-                    <p>Hours spent talking about dreams, fears, and everything in between. You're not just my girlfriend, you're my best friend and the person I want to share every thought with.</p>
+                    <p>Hours spent talking about dreams, fears, and everything in between. You're not just my
+                        girlfriend, you're my best friend and the person I want to share every thought with.</p>
                 </div>
             </div>
         </div>
@@ -1043,9 +1163,12 @@
             <div class="love-letter">
                 <h2>A Letter From My Heart 💌</h2>
                 <p>My Dearest Love,</p>
-                <p>On this special day, I want you to know how much you mean to me. You're my sunshine on cloudy days, my laughter when I'm sad, and my peace when the world feels chaotic.</p>
-                <p>Every moment we've shared has been a gift, and every day with you feels like a celebration. Your kindness, your humor, your beautiful heart - they make me fall in love with you all over again.</p>
-                <p>I'm so grateful for all the memories we've created and excited for all the adventures that lie ahead. You make my world brighter and my life infinitely more beautiful.</p>
+                <p>On this special day, I want you to know how much you mean to me. You're my sunshine on cloudy days,
+                    my laughter when I'm sad, and my peace when the world feels chaotic.</p>
+                <p>Every moment we've shared has been a gift, and every day with you feels like a celebration. Your
+                    kindness, your humor, your beautiful heart - they make me fall in love with you all over again.</p>
+                <p>I'm so grateful for all the memories we've created and excited for all the adventures that lie ahead.
+                    You make my world brighter and my life infinitely more beautiful.</p>
                 <div class="signature">
                     With all my love,<br>
                     Your Developer Boyfriend 💻❤️
@@ -1117,7 +1240,7 @@
         function toggleAutoTour() {
             autoTourActive = !autoTourActive;
             const btn = document.getElementById('autoTourBtn');
-            
+
             if (autoTourActive) {
                 btn.classList.add('active');
                 btn.innerHTML = '<i class="fas fa-pause"></i> Auto Tour';
@@ -1132,11 +1255,11 @@
         // Navigation functions
         function goToSection(sectionNum) {
             if (sectionNum < 1 || sectionNum > totalSections) return;
-            
+
             // Update current section
             const oldSection = currentSection;
             currentSection = sectionNum;
-            
+
             // Update section visibility
             document.querySelectorAll('.tour-section').forEach((section, index) => {
                 section.classList.remove('active', 'prev');
@@ -1146,18 +1269,18 @@
                     section.classList.add('prev');
                 }
             });
-            
+
             // Update UI
             updateProgressBar();
             updateIndicators();
             updateButtons();
-            
+
             // Restart auto tour if active
             if (autoTourActive) {
                 stopAutoTour();
                 startAutoTour();
             }
-            
+
             // Add special effects for certain sections
             if (currentSection === 4) {
                 setTimeout(createVideoSparkles, 500);
@@ -1197,7 +1320,7 @@
         function updateButtons() {
             const prevBtn = document.getElementById('prevBtn');
             const nextBtn = document.getElementById('nextBtn');
-            
+
             prevBtn.disabled = currentSection === 1;
             nextBtn.disabled = currentSection === totalSections;
         }
@@ -1208,7 +1331,7 @@
                 1: "🎥 This is where your first special video would play! Replace this placeholder with your actual video file.",
                 2: "🎬 Add your second favorite video memory here! Maybe a fun moment or celebration together."
             };
-            
+
             alert(messages[videoNum]);
             createVideoSparkles();
         }
@@ -1223,7 +1346,7 @@
                 5: "🎉 Maybe a photo from a recent trip or celebration?",
                 6: "❤️ Any photo that captures your love story!"
             };
-            
+
             alert(messages[photoNum]);
             createPhotoSparkles();
         }
@@ -1237,7 +1360,7 @@
             heart.style.animationDelay = Math.random() * 3 + 's';
             heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
             document.getElementById('floatingHearts').appendChild(heart);
-            
+
             setTimeout(() => {
                 heart.remove();
             }, 6000);
@@ -1256,7 +1379,7 @@
                     sparkle.style.left = Math.random() * 100 + '%';
                     sparkle.style.top = Math.random() * 100 + '%';
                     container.appendChild(sparkle);
-                    
+
                     setTimeout(() => {
                         sparkle.remove();
                     }, 1500);
@@ -1285,7 +1408,7 @@
 
         // Keyboard controls
         document.addEventListener('keydown', (e) => {
-            switch(e.key) {
+            switch (e.key) {
                 case 'ArrowLeft':
                     previousSection();
                     break;
@@ -1316,13 +1439,13 @@
 
         document.addEventListener('touchend', (e) => {
             if (!startX || !startY) return;
-            
+
             const endX = e.changedTouches[0].clientX;
             const endY = e.changedTouches[0].clientY;
-            
+
             const diffX = startX - endX;
             const diffY = startY - endY;
-            
+
             // Only process horizontal swipes
             if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
                 if (diffX > 0) {
@@ -1333,7 +1456,7 @@
                     previousSection();
                 }
             }
-            
+
             startX = 0;
             startY = 0;
         });
@@ -1353,7 +1476,7 @@
                         placeholder.style.transform = 'scale(1.02)';
                         placeholder.style.boxShadow = '0 25px 50px rgba(255, 107, 107, 0.4)';
                         createVideoSparkles();
-                        
+
                         setTimeout(() => {
                             placeholder.style.transform = 'scale(1)';
                             placeholder.style.boxShadow = '0 20px 40px rgba(0,0,0,0.3)';
@@ -1373,9 +1496,9 @@
 
         // Modify the goToSection function to include auto-effects
         const originalGoToSection = goToSection;
-        goToSection = function(sectionNum) {
+        goToSection = function (sectionNum) {
             originalGoToSection(sectionNum);
-            
+
             // Add section-specific effects
             setTimeout(() => {
                 if (currentSection === 4) {
@@ -1402,33 +1525,22 @@
                 "🎉 Happy Birthday to the most amazing person I know!",
                 "💕 You make every day brighter just by being in it!",
                 "🌟 Thank you for being my partner in all of life's adventures!",
-                "❤️ I love you more than words can express!",
-                "🎂 Here's to another year of beautiful memories together!"
+                "❤️ I Miss you more than words can express!",
+                "🎂 Here's to your First Birthday with me inlcuding beautiful memories together!"
             ];
-            
+
             const randomMessage = messages[Math.floor(Math.random() * messages.length)];
             alert(randomMessage);
             createSparkles(document.body, 30);
         }
 
-        // Add birthday surprise button to welcome section
-        function addBirthdayButton() {
-            const welcomeSection = document.getElementById('section1');
-            const button = document.createElement('button');
-            button.className = 'tour-btn';
-            button.style.marginTop = '2rem';
-            button.style.background = 'linear-gradient(45deg, #ff6b6b, #feca57)';
-            button.innerHTML = '🎁 Birthday Surprise!';
-            button.onclick = showBirthdayMessage;
-            
-            welcomeSection.querySelector('div').appendChild(button);
-        }
+
 
         // Initialize everything when the page loads
         document.addEventListener('DOMContentLoaded', () => {
             initializeTour();
             addBirthdayButton();
-            
+
             // Add welcome message
             setTimeout(() => {
                 if (currentSection === 1) {
@@ -1454,4 +1566,5 @@
         });
     </script>
 </body>
+
 </html>
