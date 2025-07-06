@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday My Love ❤️</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <style>
         * {
             margin: 0;
@@ -399,6 +402,13 @@
             position: relative;
             overflow: hidden;
             animation: photoFadeIn 0.5s ease-out;
+        }
+
+        .photo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 15px;
         }
 
         .photo-placeholder:nth-child(1) {
@@ -1035,7 +1045,7 @@
         <!-- Section 1: Welcome -->
         <div class="tour-section active welcome-section" id="section1">
             <div>
-                <h1>Happy Birthday, Beautiful! 🎉</h1>
+                <h1>Happy Birthday, Mannnu! 🎉</h1>
                 <p>Welcome to your special birthday tour!</p>
                 <div class="tour-message">
                     <i class="fas fa-heart"></i>
@@ -1054,8 +1064,8 @@
                     </div>
                     <h2>Our First Date</h2>
                     <p>I still remember how nervous I was, but you made everything feel so natural and perfect. That
-                        smile of yours captured my heart instantly, and I knew from that moment that you were someone
-                        truly special.</p>
+                        smile of yours captured me instantly, and I knew from that moment that you were someone
+                        truly special(at Sukhna Lake).</p>
                 </div>
             </div>
         </div>
@@ -1067,15 +1077,17 @@
                     <div class="icon">
                         <i class="fas fa-star"></i>
                     </div>
-                    <h2>Our Adventures</h2>
-                    <p>Every adventure with you feels like a fairytale. Whether exploring new places or trying crazy
-                        restaurants, you bring magic to ordinary moments and make every experience unforgettable.</p>
+                    <h2>Our Second Date (at CP 67)</h2>
+                    <p>That day marked the beginning of something truly special. It was when we started getting closer,
+                        when laughs turned into touches, and our first kiss sealed a moment I’ll never forget.
+                        Everything felt natural — like we were meant to be.</p>
+
                 </div>
             </div>
         </div>
 
         <!-- Section 4: Video Memory -->
-        <div class="tour-section video-section" id="section4">
+        <!-- <div class="tour-section video-section" id="section4">
             <div>
                 <h2 style="font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.3);">Our
                     Special Moments</h2>
@@ -1084,7 +1096,7 @@
                 <div class="video-container">
                     <div class="video-placeholder" onclick="playVideo(1)">
                         <div>
-                            <video src="videos/video2.mp4" controls autoplay muted playsinline loop
+                            <video src="media/3.mp4" controls autoplay muted playsinline loop
                                 style="width: 100%; border-radius: 20px;"></video>
                         </div>
                     </div>
@@ -1092,10 +1104,54 @@
                 <div class="video-container">
                     <div class="video-placeholder" onclick="playVideo(2)">
                         <div>
-                            <video src="videos/video2.mp4" controls autoplay muted playsinline loop
+                            <video src="media/2.mp4" controls autoplay muted playsinline loop
                                 style="width: 100%; border-radius: 20px;"></video>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="tour-section video-section" id="section4">
+            <div>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.3);">Our
+                    Special Moments</h2>
+                <p style="font-size: 1.3rem; margin-bottom: 2rem;">Here are some of our beautiful memories captured on
+                    video</p>
+
+                <!-- Swiper Slider -->
+                <div class="swiper myVideoSwiper" style="width: 90%; max-width: 600px;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <video src="media/3.mp4" controls autoplay muted  loop playsinline
+                                style="width: 100%; border-radius: 20px;"></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="media/2.mp4" controls autoplay muted  loop playsinline
+                                style="width: 100%; border-radius: 20px;"></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="media/3.mp4" controls autoplay muted  loop playsinline
+                                style="width: 100%; border-radius: 20px;"></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="media/4.mp4" controls autoplay muted  loop playsinline
+                                style="width: 100%; border-radius: 20px;"></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="media/5.mp4" controls autoplay muted  loop playsinline
+                                style="width: 100%; border-radius: 20px;"></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="media/6.mp4" controls autoplay muted  loop playsinline
+                                style="width: 100%; border-radius: 20px;"></video>
+                        </div>
+                        <!-- Add more videos as needed -->
+                    </div>
+
+                    <!-- Pagination and Navigation (optional) -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </div>
@@ -1107,39 +1163,76 @@
                     <div class="icon">
                         <i class="fas fa-music"></i>
                     </div>
-                    <h2>Dancing Together</h2>
-                    <p>Those spontaneous dance sessions in the kitchen - no music needed, just us being silly and
-                        completely in love. These moments make my heart skip a beat and remind me why I fell for you.
-                    </p>
+                    <h2>Our Warm Hugs</h2>
+                    <p>Those comforting hugs — tight, genuine, and full of love — always make me feel safe and at home.
+                        No words needed, just your arms around me, reminding me that no matter what, everything will be
+                        okay as long as we have each other.</p>
+
                 </div>
             </div>
         </div>
 
         <!-- Section 6: Photo Gallery -->
-        <div class="tour-section gallery-section" id="section6">
+        <!-- <div class="tour-section gallery-section" id="section6">
             <div>
                 <h2 style="font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.3);">Our Photo
                     Gallery 📸</h2>
                 <p style="font-size: 1.3rem; margin-bottom: 2rem;">Beautiful moments we've captured together</p>
                 <div class="gallery-grid">
-                    <div class="photo-placeholder" onclick="showPhotoMessage(1)">
-                        <img src="media/1.jpg" alt="Photo 1" class="photo-placeholder" />
+                    <div class="photo-placeholder" >
+                        <img src="media/1.jpg" alt="Photo 1" />
                     </div>
-                    <div class="photo-placeholder" onclick="showPhotoMessage(2)">
-                        <img src="media/1.jpg" alt="Photo 1" class="photo-placeholder" />
+                    <div class="photo-placeholder" >
+                        <img src="media/2.jpg" alt="Photo 1" />
                     </div>
-                    <div class="photo-placeholder" onclick="showPhotoMessage(3)">
-                        <img src="media/1.jpg" alt="Photo 1" class="photo-placeholder" />
+                    <div class="photo-placeholder" >
+                        <img src="media/3.jpg" alt="Photo 1" />
                     </div>
-                    <div class="photo-placeholder" onclick="showPhotoMessage(4)">
-                        <img src="media/1.jpg" alt="Photo 1" class="photo-placeholder" />
+                    <div class="photo-placeholder" >
+                        <img src="media/7.jpg" alt="Photo 1" />
                     </div>
-                    <div class="photo-placeholder" onclick="showPhotoMessage(5)">
-                        <img src="media/1.jpg" alt="Photo 1" class="photo-placeholder" />
+                    <div class="photo-placeholder" >
+                        <img src="media/5.jpg" alt="Photo 1" />
                     </div>
-                    <div class="photo-placeholder" onclick="showPhotoMessage(6)">
-                        <img src="media/1.jpg" alt="Photo 1" class="photo-placeholder" />
+                    <div class="photo-placeholder" >
+                        <img src="media/6.jpg" alt="Photo 1" />
                     </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="tour-section gallery-section" id="section6">
+            <div>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.3);">Our Photo
+                    Gallery 📸</h2>
+                <p style="font-size: 1.3rem; margin-bottom: 2rem;">Beautiful moments we've captured together</p>
+
+                <!-- Swiper Slider -->
+                <div class="swiper myPhotoSwiper" style="width: 90%; max-width: 600px;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="media/1.jpg" alt="Photo 1" style="width: 100%; border-radius: 15px;" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/2.jpg" alt="Photo 2" style="width: 100%; border-radius: 15px;" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/3.jpg" alt="Photo 3" style="width: 100%; border-radius: 15px;" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/7.jpg" alt="Photo 4" style="width: 100%; border-radius: 15px;" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/5.jpg" alt="Photo 5" style="width: 100%; border-radius: 15px;" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/6.jpg" alt="Photo 6" style="width: 100%; border-radius: 15px;" />
+                        </div>
+                    </div>
+
+                    <!-- Pagination and Navigation -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </div>
@@ -1161,20 +1254,22 @@
         <!-- Section 8: Love Letter -->
         <div class="tour-section letter-section" id="section8">
             <div class="love-letter">
-                <h2>A Letter From My Heart 💌</h2>
-                <p>My Dearest Love,</p>
-                <p>On this special day, I want you to know how much you mean to me. You're my sunshine on cloudy days,
-                    my laughter when I'm sad, and my peace when the world feels chaotic.</p>
-                <p>Every moment we've shared has been a gift, and every day with you feels like a celebration. Your
-                    kindness, your humor, your beautiful heart - they make me fall in love with you all over again.</p>
-                <p>I'm so grateful for all the memories we've created and excited for all the adventures that lie ahead.
-                    You make my world brighter and my life infinitely more beautiful.</p>
+                <h2>A Letter From Me to You 💌</h2>
+                <p>Hey You,</p>
+                <p>On this special day, I just wanted to remind you how much I appreciate having you in my life. You
+                    bring calm to the chaos, and your presence makes even the ordinary feel meaningful.</p>
+                <p>The time we've spent together has been full of moments I’ll always hold onto. Your laughter, your
+                    quirks, the way you carry yourself — it’s all stayed with me in the best way possible.</p>
+                <p>I’m glad we’ve shared so much already, and I’m looking forward to whatever comes next — side by side,
+                    figuring it out together.</p>
                 <div class="signature">
-                    With all my love,<br>
-                    Your Developer Boyfriend 💻❤️
+                    Yours truly,<br>
+                    Gourav (Ye naam aapke muh se bohot acha lgta hai)
                 </div>
+
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Section Indicators -->
@@ -1563,6 +1658,63 @@
             } else if (autoTourActive) {
                 startAutoTour();
             }
+        });
+    </script><!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // Video Slider
+    const videoSwiper = new Swiper('.myVideoSwiper', {
+    loop: true,
+    spaceBetween: 20,
+    centeredSlides: true,
+    pagination: {
+      el: '.myVideoSwiper .swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.myVideoSwiper .swiper-button-next',
+      prevEl: '.myVideoSwiper .swiper-button-prev',
+    },
+    autoplay: {
+      delay: 8000,
+      disableOnInteraction: false,
+    },
+    on: {
+      slideChange: function () {
+        const slides = document.querySelectorAll('.myVideoSwiper .swiper-slide video');
+
+        slides.forEach((video, index) => {
+          if (index === this.realIndex) {
+            video.play().catch(() => {}); // Try to play
+            video.muted = false;          // Unmute only current slide
+          } else {
+            video.pause();                // Pause all others
+            video.currentTime = 0;
+            video.muted = true;           // Keep muted
+          }
+        });
+      }
+    }
+  });
+
+        // Image Gallery Slider
+        const photoSwiper = new Swiper('.myPhotoSwiper', {
+            loop: true,
+            spaceBetween: 20,
+            centeredSlides: true,
+            pagination: {
+                el: '.myPhotoSwiper .swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.myPhotoSwiper .swiper-button-next',
+                prevEl: '.myPhotoSwiper .swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
         });
     </script>
 </body>
