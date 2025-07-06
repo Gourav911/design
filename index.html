@@ -1030,6 +1030,73 @@
                 background: rgba(255, 255, 255, 0.5);
             }
         }
+        /* Default Swiper video style */
+.myVideoSwiper {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.myVideoSwiper .swiper-slide video {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .myVideoSwiper .swiper-slide video {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .myVideoSwiper {
+    width: 95%;
+  }
+
+  .myVideoSwiper .swiper-slide video {
+    max-height: 500px;
+    border-radius: 15px;
+  }
+}
+/* Default Photo Swiper style */
+.myPhotoSwiper {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.myPhotoSwiper .swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+/* Tablet and Mobile Responsive */
+@media (max-width: 768px) {
+  .myPhotoSwiper .swiper-slide img {
+    max-height: 400px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .myPhotoSwiper {
+    width: 95%;
+  }
+
+  .myPhotoSwiper .swiper-slide img {
+    max-height: 420px;
+    border-radius: 10px;
+  }
+}
+
+
     </style>
 </head>
 
@@ -1122,27 +1189,27 @@
                 <div class="swiper myVideoSwiper" style="width: 90%; max-width: 600px;">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <video src="media/3.mp4" controls autoplay muted  loop playsinline
+                            <video src="media/3.mp4" controls autoplay muted loop playsinline
                                 style="width: 100%; border-radius: 20px;"></video>
                         </div>
                         <div class="swiper-slide">
-                            <video src="media/2.mp4" controls autoplay muted  loop playsinline
+                            <video src="media/2.mp4" controls autoplay muted loop playsinline
                                 style="width: 100%; border-radius: 20px;"></video>
                         </div>
                         <div class="swiper-slide">
-                            <video src="media/3.mp4" controls autoplay muted  loop playsinline
+                            <video src="media/3.mp4" controls autoplay muted loop playsinline
                                 style="width: 100%; border-radius: 20px;"></video>
                         </div>
                         <div class="swiper-slide">
-                            <video src="media/4.mp4" controls autoplay muted  loop playsinline
+                            <video src="media/4.mp4" controls autoplay muted loop playsinline
                                 style="width: 100%; border-radius: 20px;"></video>
                         </div>
                         <div class="swiper-slide">
-                            <video src="media/5.mp4" controls autoplay muted  loop playsinline
+                            <video src="media/5.mp4" controls autoplay muted loop playsinline
                                 style="width: 100%; border-radius: 20px;"></video>
                         </div>
                         <div class="swiper-slide">
-                            <video src="media/6.mp4" controls autoplay muted  loop playsinline
+                            <video src="media/6.mp4" controls autoplay muted loop playsinline
                                 style="width: 100%; border-radius: 20px;"></video>
                         </div>
                         <!-- Add more videos as needed -->
@@ -1200,42 +1267,42 @@
                 </div>
             </div>
         </div> -->
-        <div class="tour-section gallery-section" id="section6">
-            <div>
-                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.3);">Our Photo
-                    Gallery 📸</h2>
-                <p style="font-size: 1.3rem; margin-bottom: 2rem;">Beautiful moments we've captured together</p>
+            <div class="tour-section gallery-section" id="section6">
+                <div>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.3);">Our Photo
+                        Gallery 📸</h2>
+                    <p style="font-size: 1.3rem; margin-bottom: 2rem;">Beautiful moments we've captured together</p>
 
-                <!-- Swiper Slider -->
-                <div class="swiper myPhotoSwiper" style="width: 90%; max-width: 600px;">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="media/1.jpg" alt="Photo 1" style="width: 100%; border-radius: 15px;" />
+                    <!-- Swiper Slider -->
+                    <div class="swiper myPhotoSwiper" style="width: 90%; max-width: 600px;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="media/1.jpg" alt="Photo 1" style="width: 100%; border-radius: 15px;" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="media/2.jpg" alt="Photo 2" style="width: 100%; border-radius: 15px;" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="media/3.jpg" alt="Photo 3" style="width: 100%; border-radius: 15px;" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="media/7.jpg" alt="Photo 4" style="width: 100%; border-radius: 15px;" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="media/5.jpg" alt="Photo 5" style="width: 100%; border-radius: 15px;" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="media/6.jpg" alt="Photo 6" style="width: 100%; border-radius: 15px;" />
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="media/2.jpg" alt="Photo 2" style="width: 100%; border-radius: 15px;" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="media/3.jpg" alt="Photo 3" style="width: 100%; border-radius: 15px;" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="media/7.jpg" alt="Photo 4" style="width: 100%; border-radius: 15px;" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="media/5.jpg" alt="Photo 5" style="width: 100%; border-radius: 15px;" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="media/6.jpg" alt="Photo 6" style="width: 100%; border-radius: 15px;" />
-                        </div>
+
+                        <!-- Pagination and Navigation -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
-
-                    <!-- Pagination and Navigation -->
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
                 </div>
             </div>
-        </div>
 
         <!-- Section 7: Late Night Talks -->
         <div class="tour-section memory-section" id="section7">
@@ -1664,39 +1731,23 @@
 
     <script>
         // Video Slider
-    const videoSwiper = new Swiper('.myVideoSwiper', {
-    loop: true,
-    spaceBetween: 20,
-    centeredSlides: true,
-    pagination: {
-      el: '.myVideoSwiper .swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.myVideoSwiper .swiper-button-next',
-      prevEl: '.myVideoSwiper .swiper-button-prev',
-    },
-    autoplay: {
-      delay: 8000,
-      disableOnInteraction: false,
-    },
-    on: {
-      slideChange: function () {
-        const slides = document.querySelectorAll('.myVideoSwiper .swiper-slide video');
-
-        slides.forEach((video, index) => {
-          if (index === this.realIndex) {
-            video.play().catch(() => {}); // Try to play
-            video.muted = false;          // Unmute only current slide
-          } else {
-            video.pause();                // Pause all others
-            video.currentTime = 0;
-            video.muted = true;           // Keep muted
-          }
+        const videoSwiper = new Swiper('.myVideoSwiper', {
+            loop: true,
+            spaceBetween: 20,
+            centeredSlides: true,
+            pagination: {
+                el: '.myVideoSwiper .swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.myVideoSwiper .swiper-button-next',
+                prevEl: '.myVideoSwiper .swiper-button-prev',
+            },
+            autoplay: {
+                delay: 8000,
+                disableOnInteraction: false,
+            },
         });
-      }
-    }
-  });
 
         // Image Gallery Slider
         const photoSwiper = new Swiper('.myPhotoSwiper', {
